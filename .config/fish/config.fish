@@ -6,6 +6,8 @@ set -x XDG_STATE_HOME "$HOME/.local/state"
 set -x XDG_CACHE_HOME "$HOME/.cache"
 
 if status is-interactive
+    set -x MANPAGER "col -bx | bat -l man -p"
+
     # Dotfiles
     alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
@@ -19,7 +21,7 @@ if status is-interactive
     alias rm="trash"
 
     # Change cat to bat
-    alias cat="bat --plain"
+    alias cat="bat --paging=never"
 
     # Change top to htop
     alias top="htop"
@@ -32,5 +34,6 @@ if status is-interactive
     # Python
     alias python="python3"
     alias pip="pip3"
-end
 
+    starship init fish | source
+end
