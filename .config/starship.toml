@@ -1,28 +1,33 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
-format = "$python$username$hostname$directory$git_branch$git_status$git_metrics$status$character"
+format = "$python$username$hostname$directory$git_branch$git_commit$git_status$git_metrics$status$character"
 right_format = "$cmd_duration$memory_usage"
 add_newline = false
 palette = "catppuccin_mocha"
 
 [python]
-format = "[\\($virtualenv\\) ]($style)"
+format = "[(\\($virtualenv\\) )]($style)"
 style = "blue"
 
 [username]
 format = "[$user]($style)"
 style_user = "green"
 show_always = true
+disabled = false
 
 [hostname]
 format = "@$hostname "
 ssh_only = false
+disabled = false
 
 [directory]
 format = "in [$path]($style) "
 style = "green"
 
 [git_branch]
+style = "yellow"
+
+[git_commit]
 style = "yellow"
 
 [git_status]
