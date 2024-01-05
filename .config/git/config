@@ -1,8 +1,5 @@
 [include]
-    path = ~/.config/git/configs/default.gitconfig
-
-[includeIf "gitdir:~/Dev/foxminded/"]
-    path = ~/.config/git/configs/foxminded.gitconfig
+    path = ~/.config/git/creds.config
 
 [core]
     pager = delta

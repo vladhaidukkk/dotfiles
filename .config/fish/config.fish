@@ -5,17 +5,20 @@ if status is-login
     set -x XDG_CONFIG_HOME "$HOME/.config"
     set -x XDG_STATE_HOME "$HOME/.local/state"
     set -x XDG_CACHE_HOME "$HOME/.cache"
-    set -x PYENV_ROOT $XDG_CONFIG_HOME/pyenv
 
     set -x PATH /Users/vladhaidukkk/Library/Application\ Support/JetBrains/Toolbox/scripts $PATH
     set -x PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
+
+    # Setup `pyenv`
+    set -x PYENV_ROOT $XDG_CONFIG_HOME/pyenv
     set -x PATH $PYENV_ROOT/bin $PATH
+    pyenv init - | source
+
     # Created by `pipx`
     set -x PATH $PATH /Users/vladhaidukkk/.local/bin
 
+    # Misc env vars
     set -x MANPAGER "col -bx | bat -l man -p"
-
-    pyenv init - | source
 end
 
 if status is-interactive
@@ -37,7 +40,7 @@ if status is-interactive
     # top -> htop
     alias top="htop"
 
-    # Colorize grep output
+    # Colorize `grep` output
     alias grep="grep --color=auto"
     alias egrep="egrep --color=auto"
     alias fgrep="fgrep --color=auto"
