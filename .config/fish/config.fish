@@ -22,6 +22,11 @@ if status is-login
 end
 
 if status is-interactive
+    # Start SSH Agent
+    if not pgrep -f ssh-agent >/dev/null
+        ssh-agent -c | source
+    end
+
     # Dotfiles
     alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
