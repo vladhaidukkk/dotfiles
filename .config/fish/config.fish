@@ -19,6 +19,10 @@ if status is-login
 
     # Misc env vars
     set -x MANPAGER "col -bx | bat -l man -p"
+
+    # Setup `direnv`
+    direnv hook fish | source
+    set -x DIRENV_LOG_FORMAT ""
 end
 
 if status is-interactive
