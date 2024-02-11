@@ -1,0 +1,67 @@
+[
+    // Shortcuts to learn:
+    // 1. shift+cmd+n - open new window
+    // 2. cmd+k+z - zen mode
+    // 3. cmd + up/down - go to the beginning/end of the file
+    // 4. enter/shift+enter - go to next/prev match in search (cmd+f) / or cmd+g/shift+cmd+g
+    // 5. shift+f12 - references
+    // 6. f12 - go to definition
+    // 7. opt+cmd+left/right - go to left/right tab
+    // 8. cmd+k+w - close all tabs
+    // 9. shift+cmd+v - open preview
+    // 10. cmd+d - add selection next, shift+cmd+l - select all matches
+    // 11. f2 - refactor (change name)
+    // 12. opt+up/down - move line up/down
+    // 13. shift+opt+up/down - duplicate line up/down
+    // 14. shift+cmd+k - delete line
+    // 15. shift+opt+a - multiline comment
+    {
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "alt+f12",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "extension.advancedNewFile",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.showEditorsInActiveGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-inlineChat.start",
+        "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+    },
+    {
+        "key": "cmd+y",
+        "command": "inlineChat.start",
+        "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+    }
+    // {
+    //     "key": "ctrl+r",
+    //     "command": "python.execInTerminal",
+    //     "when": "editorLangId == 'python'"
+    // },
+]

@@ -1,0 +1,343 @@
+{
+    // window
+    "window.title": "${rootName}",
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+    "window.newWindowDimensions": "inherit",
+    "window.restoreFullscreen": true,
+
+    // workbench
+    "workbench.settings.editor": "json",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.list.defaultFindMode": "filter",
+
+    // editor preview
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": false,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+
+    // tabs
+    // "workbench.editor.showTabs": "single",
+    "workbench.editor.labelFormat": "default",
+    // "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.openPositioning": "last",
+    "workbench.editor.pinnedTabSizing": "shrink",
+
+    // breadcrumbs
+    "breadcrumbs.enabled": true, // shortcuts: focus: shift+cmd+., top level navigation: press opt+arrow
+    "breadcrumbs.icons": false,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "off",
+
+    // theme
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.productIconTheme": "fluent-icons",
+
+    // theme > catppuccin
+    "editor.semanticHighlighting.enabled": true,
+    "terminal.integrated.minimumContrastRatio": 1,
+    "catppuccin.customUIColors": {
+        "all": {
+            "editorIndentGuide.activeBackground": "surface1",
+            "editorIndentGuide.background": "surface0",
+            "editorRuler.foreground": "surface0",
+            "editorOverviewRuler.infoForeground": "#0000"
+        }
+    },
+
+    // fonts
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Iosevka, monospace",
+    "editor.suggestFontSize": 15,
+    "editor.codeLensFontFamily": "Iosevka, monospace",
+    "editor.inlayHints.fontFamily": "Iosevka, monospace",
+    "debug.console.fontSize": 15,
+    "debug.console.fontFamily": "Iosevka, monospace",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Iosevka Nerd Font, Iosevka, monospace",
+    "[log][Log]": {
+        "editor.fontFamily": "Iosevka, monospace",
+        "editor.fontSize": 15
+    },
+    // todo: change fonts everywhere
+    // "notebook.output.fontFamily": "Iosevka",
+
+    // explorer
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.decorations.badges": false,
+    "explorer.decorations.colors": true,
+
+    // files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "files.associations": {
+        "*.css": "postcss",
+        ".env*": "dotenv"
+    },
+    // "files.simpleDialog.enable": true,
+
+    // editor
+    "editor.minimap.enabled": false,
+    "editor.padding.top": 10,
+    // "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 10,
+    "editor.glyphMargin": true,
+    "editor.showFoldingControls": "never", // shortcuts: fold: opt+cmd+[, unfold: opt+cmd+], fold all: cmd+k,cmd+0, unfold all: cmd+k,cmd+j
+    "editor.guides.indentation": true,
+    "editor.matchBrackets": "near",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "editor.renderLineHighlight": "all",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollBeyondLastColumn": 8,
+    "editor.scrollBeyondLastLine": true,
+    "editor.cursorSurroundingLines": 8,
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.colorDecorators": false,
+    "editor.linkedEditing": true,
+    "editor.dragAndDrop": false,
+    "editor.roundedSelection": false,
+    "editor.renderControlCharacters": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // removed: -
+
+    // wrapping
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 160,
+    "editor.wrappingIndent": "same",
+
+    // hints & tips
+    "editor.lightbulb.enabled": "off", // shortcut: cmd+.
+    "editor.hover.enabled": true, // shortcut: cmd+k,cmd+i
+    "editor.parameterHints.enabled": true, // shortcut: shift+cmd+space
+
+    // suggestions
+    "editor.quickSuggestionsDelay": 10,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    }, // shortcuts: cmd+i, cycle through inline suggestions: opt+[ or opt+]
+    "editor.snippetSuggestions": "top",
+    "editor.wordBasedSuggestions": "off",
+    "javascript.suggest.names": false,
+    "javascript.suggest.paths": false,
+    "typescript.suggest.paths": false,
+
+    // code lens
+    "editor.codeLens": true, // go to implementation: cmd+f12, peek implementations: shift+cmd+f12, go to definition: f12, peek definitions: opt+f12, peek references: shift+f12
+    "merge-conflict.codeLens.enabled": true,
+
+    // inlay hints
+    "editor.inlayHints.enabled": "on",
+    "editor.inlayHints.padding": false,
+
+    // search
+    "search.showLineNumbers": true,
+    "search.smartCase": true,
+    "search.quickOpen.includeHistory": false,
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/.idea": true,
+        "**/.venv": true,
+        "**/venv": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true
+    },
+
+    // source control manager
+    "scm.countBadge": "focused",
+    "scm.diffDecorations": "gutter",
+    "scm.diffDecorationsGutterWidth": 2,
+
+    // git
+    "git.untrackedChanges": "separate",
+    "diffEditor.renderIndicators": false,
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.rightClickBehavior": "default",
+    "terminal.integrated.macOptionIsMeta": true,
+    // "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iTerm.app",
+
+    // debug
+    "debug.openDebug": "openOnSessionStart",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.toolBarLocation": "docked",
+    "debug.showSubSessionsInToolBar": true,
+
+    // task
+    "task.autoDetect": "off",
+
+    // langs
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+
+    // langs > python
+    "[python]": {
+        "editor.rulers": [88, 120],
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "flake8.args": ["--max-line-length", "88", "--extend-ignore", "E203,E402"], // compatibility with black
+    "isort.args": ["--profile", "black"], // compatibility with black,
+    "python.analysis.typeCheckingMode": "off", // delegate to mypy
+    "python.terminal.activateEnvironment": false,
+
+    // langs > css
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // langs > json
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "strings": "on"
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+
+    // langs > yaml
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.quickSuggestions": {
+            "strings": "on"
+        }
+    },
+
+    // langs > markdown
+    "markdown.updateLinksOnFileMove.enabled": "always",
+
+    // emmet
+    "emmet.includeLanguages": {
+        "postcss": "css"
+    },
+
+    // prettier
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "always",
+    "prettier.bracketSpacing": true,
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": false,
+    "prettier.trailingComma": "es5",
+    "prettier.semi": true,
+    "prettier.printWidth": 160,
+
+    // better comments
+    "better-comments.tags": [
+        {
+            "tag": "hint:",
+            "color": "#89b4fa",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },
+        {
+            "tag": "todo:",
+            "color": "#f9e2af",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },
+        {
+            "tag": "fix:",
+            "color": "#f38ba8",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        }
+    ],
+
+    // error lens
+    "errorLens.delay": 1000,
+    "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+
+    // color highlight
+    "color-highlight.markerType": "dot-before",
+    "color-highlight.markRuler": false,
+
+    // dotenv
+    "dotenv.cloakColor": "#00000040",
+    "dotenv.enableAutocloaking": false,
+    "editor.tokenColorCustomizations": {
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "textMateRules": []
+    },
+
+    // intellicode
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    // code spell checker
+    "cSpell.language": "en",
+    "cSpell.userWords": ["catppuccin"],
+
+    // github copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    // other
+    "update.showReleaseNotes": true,
+    "extensions.ignoreRecommendations": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.location": "hidden"
+}
