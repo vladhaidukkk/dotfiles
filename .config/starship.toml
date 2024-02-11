@@ -6,8 +6,9 @@ add_newline = false
 palette = "catppuccin_mocha"
 
 [python]
-format = "[(\\($virtualenv\\) )]($style)"
-style = "blue"
+format = "[\\[[$version](green)(|[$virtualenv](blue))\\] ]($style)"
+version_format = "${raw}"
+style = "while"
 
 [username]
 format = "[$user]($style)"
@@ -26,6 +27,7 @@ style = "green"
 
 [git_branch]
 style = "yellow"
+truncation_length = 50
 
 [git_commit]
 style = "yellow"
