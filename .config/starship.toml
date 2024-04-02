@@ -41,7 +41,7 @@ deleted_style = "red"
 disabled = false
 
 [status]
-format = "[\\[$status\\] ]($style)"
+format = "[\\[($common_meaning:)$status\\] ]($style)"
 style = "red"
 disabled = false
 
