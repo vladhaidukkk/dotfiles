@@ -8,10 +8,10 @@ if status is-interactive
     alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
     # ls -> exa
-    alias ls="exa --group-directories-first"
-    alias la="exa -a --group-directories-first"
-    alias ll="exa -al --group-directories-first"
-    alias lt="exa -aT --group-directories-first"
+    alias ls="exa --group-directories-first --icons"
+    alias la="exa -a --group-directories-first --icons"
+    alias ll="exa -al --group-directories-first --icons"
+    alias lt="exa -aT --group-directories-first --icons"
 
     # rm -> trash
     alias rm="trash"

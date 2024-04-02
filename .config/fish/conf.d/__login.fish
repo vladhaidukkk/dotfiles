@@ -21,6 +21,9 @@ if status is-login
     direnv hook fish | source
     set -x DIRENV_LOG_FORMAT ""
 
+    # Setup `zoxide`
+    zoxide init fish | source
+
     # Misc env vars
     set -x MANPAGER "col -bx | bat -l man -p"
 end
