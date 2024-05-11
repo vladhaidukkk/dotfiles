@@ -11,7 +11,7 @@ if status is-login
     set -x DOCKER_CONFIG $XDG_CONFIG_HOME/docker
     set -x IPYTHONDIR $XDG_CONFIG_HOME/ipython
     set -x LESSHISTFILE $XDG_CACHE_HOME/less/history
-    set -x PSQL_HISTORY $XDG_DATA_HOME/psql_history
+    set -x PSQL_HISTORY $XDG_DATA_HOME/psql/psql_history
     set -x PYENV_ROOT $XDG_CONFIG_HOME/pyenv
 
     set -x PATH /Users/vladhaidukkk/Library/Application\ Support/JetBrains/Toolbox/scripts $PATH

@@ -1,5 +1,5 @@
 [include]
-    path = ~/.config/git/creds.config
+    path = ~/.config/git/creds.cfg
 
 [core]
     pager = delta
