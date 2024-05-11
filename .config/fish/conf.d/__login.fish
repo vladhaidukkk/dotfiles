@@ -29,7 +29,7 @@ if status is-login
     direnv hook fish | source
 
     # Setup `zoxide`
-    zoxide init fish | source
+    zoxide init --cmd cd fish | source
 
     # Misc env vars
     set -x MANPAGER "col -bx | bat -l man -p"

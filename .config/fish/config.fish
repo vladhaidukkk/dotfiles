@@ -7,11 +7,11 @@ if status is-interactive
     # Dotfiles
     alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
-    # ls -> exa
-    alias ls="exa --group-directories-first --icons"
-    alias la="exa -a --group-directories-first --icons"
-    alias ll="exa -al --group-directories-first --icons"
-    alias lt="exa -aT --group-directories-first --icons"
+    # ls -> eza
+    alias ls="eza -1 --group-directories-first --icons"
+    alias la="eza -1a --group-directories-first --icons"
+    alias ll="eza -1al --bytes --no-user --no-time --group-directories-first --icons"
+    alias lt="eza -1a --tree --group-directories-first --icons"
 
     # rm -> trash
     alias rm="trash"
