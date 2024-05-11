@@ -2,7 +2,7 @@
 
 format = "$python$username$hostname$directory$git_branch$git_commit$git_status$git_metrics$status$character"
 right_format = "$cmd_duration$memory_usage"
-add_newline = false
+add_newline = true
 palette = "catppuccin_mocha"
 
 [python]
