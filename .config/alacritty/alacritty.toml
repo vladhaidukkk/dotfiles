@@ -9,7 +9,8 @@ padding = { x = 16, y = 16 }
 decorations = "Buttonless"
 opacity = 1
 blur = false
+option_as_alt = "Both"
 
 [font]
-normal.family = "Iosevka Nerd Font"
-size = 16
+normal.family = "JetBrainsMono Nerd Font"
+size = 15

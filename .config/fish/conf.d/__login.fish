@@ -24,6 +24,10 @@ if status is-login
     # Created by `pipx`
     set -x PATH $PATH /Users/vladhaidukkk/.local/bin
 
+    # Setup `jenv`
+    set -x PATH $HOME/.jenv/bin $PATH
+    jenv init - | source
+
     # Setup `direnv`
     set -x DIRENV_LOG_FORMAT ""
     direnv hook fish | source
@@ -32,5 +36,6 @@ if status is-login
     zoxide init --cmd cd fish | source
 
     # Misc env vars
+    set -x EDITOR "vim"
     set -x MANPAGER "col -bx | bat -l man -p"
 end

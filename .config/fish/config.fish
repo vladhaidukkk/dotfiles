@@ -30,5 +30,11 @@ if status is-interactive
     # pyenv
     alias pyvers="pyenv install -l | grep -E '^[[:blank:]]*[0-9]'"
 
+    # tmuxinator
+    alias mux="tmuxinator"
+
+    # aws localstack
+    alias awslocal="aws --endpoint-url http://localhost:4566"
+
     starship init fish | source
 end
