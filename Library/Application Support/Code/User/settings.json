@@ -1,343 +1,244 @@
 {
-    // window
-    "window.title": "${rootName}",
-    "window.titleBarStyle": "custom",
-    "window.commandCenter": false,
-    "window.newWindowDimensions": "inherit",
-    "window.restoreFullscreen": true,
+  // ========================================
+  //             Window & Layout
+  // ========================================
+  "window.title": "${rootName}",
+  "window.commandCenter": true,
+  "workbench.layoutControl.enabled": true,
+  "workbench.activityBar.location": "top",
 
-    // workbench
-    "workbench.settings.editor": "json",
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.revealIfOpen": true,
-    "workbench.startupEditor": "none",
-    "workbench.tips.enabled": false,
-    "workbench.tree.indent": 12,
-    "workbench.tree.renderIndentGuides": "none",
-    "workbench.list.defaultFindMode": "filter",
+  // ========================================
+  //                  Theme
+  // ========================================
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
 
-    // editor preview
-    "workbench.editor.enablePreview": true,
-    "workbench.editor.enablePreviewFromCodeNavigation": false,
-    "workbench.editor.enablePreviewFromQuickOpen": true,
+  // ========================================
+  //                 Explorer
+  // ========================================
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "onHover",
+  // [NOTE]: Prevents automatically revealing files in the explorer, avoiding distractions, especially with packages and libraries.
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
-    // tabs
-    // "workbench.editor.showTabs": "single",
-    "workbench.editor.labelFormat": "default",
-    // "workbench.editor.tabSizing": "shrink",
-    "workbench.editor.openPositioning": "last",
-    "workbench.editor.pinnedTabSizing": "shrink",
+  // ========================================
+  //                 Startup
+  // ========================================
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
 
-    // breadcrumbs
-    "breadcrumbs.enabled": true, // shortcuts: focus: shift+cmd+., top level navigation: press opt+arrow
-    "breadcrumbs.icons": false,
-    "breadcrumbs.filePath": "on",
-    "breadcrumbs.symbolPath": "off",
+  // ========================================
+  //                 Settings
+  // ========================================
+  "workbench.settings.editor": "json",
 
-    // theme
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.productIconTheme": "fluent-icons",
+  // ========================================
+  //                  Editor
+  // ========================================
+  // [NOTE]: If a file is already open in an editor group, reveal it there instead of opening a new tab.
+  "workbench.editor.revealIfOpen": true,
+  "editor.minimap.enabled": false,
+  "editor.padding.top": 8,
+  // [NOTE]: Highlights matching brackets only when the cursor is near one, rather than when inside brackets.
+  "editor.matchBrackets": "near",
+  "editor.bracketPairColorization.enabled": false,
+  // [NOTE]: Disables current line highlighting, which can be visually disruptive depending on the theme.
+  "editor.renderLineHighlight": "none",
+  "editor.roundedSelection": false,
+  "editor.dragAndDrop": false,
+  "editor.scrollBeyondLastColumn": 8,
+  // [NOTE]: Excludes the '-' character from word separators, making it easier to navigate through words.
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.accessibilitySupport": "off",
 
-    // theme > catppuccin
-    "editor.semanticHighlighting.enabled": true,
-    "terminal.integrated.minimumContrastRatio": 1,
-    "catppuccin.customUIColors": {
-        "all": {
-            "editorIndentGuide.activeBackground": "surface1",
-            "editorIndentGuide.background": "surface0",
-            "editorRuler.foreground": "surface0",
-            "editorOverviewRuler.infoForeground": "#0000"
-        }
-    },
+  // ========================================
+  //                   Tabs
+  // ========================================
+  "workbench.editor.showTabs": "multiple",
+  // "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.openPositioning": "last",
 
-    // fonts
-    "editor.fontSize": 16,
-    "editor.fontFamily": "Iosevka, monospace",
-    "editor.suggestFontSize": 15,
-    "editor.codeLensFontFamily": "Iosevka, monospace",
-    "editor.inlayHints.fontFamily": "Iosevka, monospace",
-    "debug.console.fontSize": 15,
-    "debug.console.fontFamily": "Iosevka, monospace",
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontFamily": "Iosevka Nerd Font, Iosevka, monospace",
-    "[log][Log]": {
-        "editor.fontFamily": "Iosevka, monospace",
-        "editor.fontSize": 15
-    },
-    // todo: change fonts everywhere
-    // "notebook.output.fontFamily": "Iosevka",
+  // ========================================
+  //               Breadcrumbs
+  // ========================================
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "off",
 
-    // explorer
-    "explorer.compactFolders": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.decorations.badges": false,
-    "explorer.decorations.colors": true,
+  // ========================================
+  //              Overview Ruler
+  // ========================================
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "workbench.colorCustomizations": {
+    // [HINT]: Hide other markers in the overview ruler if you don't find them useful.
+    "editorOverviewRuler.selectionHighlightForeground": "#0000",
+    "editorOverviewRuler.bracketMatchForeground": "#0000"
+  },
 
-    // files
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true
-    },
-    "files.associations": {
-        "*.css": "postcss",
-        ".env*": "dotenv"
-    },
-    // "files.simpleDialog.enable": true,
+  // ========================================
+  //               Decorations
+  // ========================================
+  "explorer.decorations.badges": false,
+  "scm.diffDecorations": "gutter",
 
-    // editor
-    "editor.minimap.enabled": false,
-    "editor.padding.top": 10,
-    // "editor.stickyScroll.enabled": true,
-    "editor.stickyScroll.maxLineCount": 10,
-    "editor.glyphMargin": true,
-    "editor.showFoldingControls": "never", // shortcuts: fold: opt+cmd+[, unfold: opt+cmd+], fold all: cmd+k,cmd+0, unfold all: cmd+k,cmd+j
-    "editor.guides.indentation": true,
-    "editor.matchBrackets": "near",
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
-    "editor.renderLineHighlight": "all",
-    "editor.bracketPairColorization.enabled": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollBeyondLastColumn": 8,
-    "editor.scrollBeyondLastLine": true,
-    "editor.cursorSurroundingLines": 8,
-    "editor.overviewRulerBorder": false,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.occurrencesHighlight": "off",
-    "editor.colorDecorators": false,
-    "editor.linkedEditing": true,
-    "editor.dragAndDrop": false,
-    "editor.roundedSelection": false,
-    "editor.renderControlCharacters": true,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // removed: -
+  // ========================================
+  //               Suggestions
+  // ========================================
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.wordBasedSuggestions": "off",
 
-    // wrapping
-    "editor.wordWrap": "off",
-    "editor.wordWrapColumn": 160,
-    "editor.wrappingIndent": "same",
+  // ========================================
+  //                Typography
+  // ========================================
+  "editor.fontSize": 15,
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "debug.console.fontSize": 15,
+  "debug.console.fontFamily": "JetBrains Mono, monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, monospace",
 
-    // hints & tips
-    "editor.lightbulb.enabled": "off", // shortcut: cmd+.
-    "editor.hover.enabled": true, // shortcut: cmd+k,cmd+i
-    "editor.parameterHints.enabled": true, // shortcut: shift+cmd+space
+  // ========================================
+  //                  Cursor
+  // ========================================
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 8,
 
-    // suggestions
-    "editor.quickSuggestionsDelay": 10,
-    "editor.suggest.preview": true,
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.quickSuggestions": {
-        "other": "on",
-        "comments": "off",
-        "strings": "off"
-    }, // shortcuts: cmd+i, cycle through inline suggestions: opt+[ or opt+]
-    "editor.snippetSuggestions": "top",
-    "editor.wordBasedSuggestions": "off",
-    "javascript.suggest.names": false,
-    "javascript.suggest.paths": false,
-    "typescript.suggest.paths": false,
+  // ========================================
+  //                  Files
+  // ========================================
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    // System files
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    // Code editors
+    "**/.idea": true,
+    // Version control systems
+    "**/.git": true,
+    // Python caches
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
 
-    // code lens
-    "editor.codeLens": true, // go to implementation: cmd+f12, peek implementations: shift+cmd+f12, go to definition: f12, peek definitions: opt+f12, peek references: shift+f12
-    "merge-conflict.codeLens.enabled": true,
+  // ========================================
+  //                  Search
+  // ========================================
+  // [NOTE]: Enables case-sensitivity automatically when uppercase letters are used in search queries.
+  "search.smartCase": true,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    // Code editors
+    "**/.idea": true,
+    // Version control systems
+    "**/.git": true,
+    // Project dependencies
+    "**/.venv": true,
+    "**/node_modules": true,
+    // Python caches
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
 
-    // inlay hints
-    "editor.inlayHints.enabled": "on",
-    "editor.inlayHints.padding": false,
+  // ========================================
+  //         SCM & Git & Diff Editor
+  // ========================================
+  // [NOTE]: Displays the changes count badge only for the active repository.
+  "scm.countBadge": "focused",
+  // [NOTE]: Displays untracked changes separately from other changes to enhance clarity.
+  "git.untrackedChanges": "separate",
+  // [NOTE]: Hides '+' and '-' indicators in the side-by-side diff view to reduce visual clutter.
+  "diffEditor.renderIndicators": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 
-    // search
-    "search.showLineNumbers": true,
-    "search.smartCase": true,
-    "search.quickOpen.includeHistory": false,
-    "search.useIgnoreFiles": false,
-    "search.exclude": {
-        "**/.idea": true,
-        "**/.venv": true,
-        "**/venv": true,
-        "**/__pycache__": true,
-        "**/.mypy_cache": true
-    },
+  // ========================================
+  //                 Debugger
+  // ========================================
+  "debug.toolBarLocation": "commandCenter",
+  "debug.openDebug": "openOnSessionStart",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  // [NOTE]: Helps to view the hierarchy of debug sessions.
+  "debug.showSubSessionsInToolBar": true,
 
-    // source control manager
-    "scm.countBadge": "focused",
-    "scm.diffDecorations": "gutter",
-    "scm.diffDecorationsGutterWidth": 2,
+  // ========================================
+  //                 Terminal
+  // ========================================
+  "terminal.integrated.scrollback": 3000,
+  "terminal.integrated.macOptionIsMeta": true,
+  // [NOTE]: Keeps right-click behavior standard within the terminal for consistency (without side effects).
+  "terminal.integrated.rightClickBehavior": "default",
 
-    // git
-    "git.untrackedChanges": "separate",
-    "diffEditor.renderIndicators": false,
-    "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.rightClickBehavior": "default",
-    "terminal.integrated.macOptionIsMeta": true,
-    // "terminal.explorerKind": "external",
-    "terminal.external.osxExec": "iTerm.app",
+  // ========================================
+  //         Indentation & Formatting
+  // ========================================
+  // [NOTE]: Sets tab size to 2 spaces, which is common across many languages and file formats.
+  "editor.tabSize": 2,
+  // [NOTE]: Disables auto-detection to enforce consistent indentation and clearly identify files that don't match my style for informed decisions.
+  "editor.detectIndentation": false,
+  // [NOTE]: Inserts spaces instead of tabs, which is preferred in most languages and file formats.
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": null,
 
-    // debug
-    "debug.openDebug": "openOnSessionStart",
-    "debug.internalConsoleOptions": "openOnSessionStart",
-    "debug.toolBarLocation": "docked",
-    "debug.showSubSessionsInToolBar": true,
+  // ========================================
+  //                 Prettier
+  // ========================================
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 120,
 
-    // task
-    "task.autoDetect": "off",
-
-    // langs
+  // ========================================
+  //                  Python
+  // ========================================
+  "[python]": {
     "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "editor.formatOnSave": true,
+    "editor.rulers": [88, 120],
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  // [HINT]: Disable if the terminal already auto-activates Python virtual environments.
+  "python.terminal.activateEnvironment": false,
 
-    // langs > python
-    "[python]": {
-        "editor.rulers": [88, 120],
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
-    },
-    "flake8.args": ["--max-line-length", "88", "--extend-ignore", "E203,E402"], // compatibility with black
-    "isort.args": ["--profile", "black"], // compatibility with black,
-    "python.analysis.typeCheckingMode": "off", // delegate to mypy
-    "python.terminal.activateEnvironment": false,
+  // ========================================
+  //          Black + Isort + Flake8
+  // ========================================
+  "isort.args": ["--profile", "black"],
+  "flake8.args": ["--max-line-length", "88", "--extend-ignore", "E203,E701"],
 
-    // langs > css
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+  // ========================================
+  //                   JSON
+  // ========================================
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
-    // langs > json
-    "[json][jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.quickSuggestions": {
-            "strings": "on"
-        },
-        "editor.suggest.insertMode": "replace"
-    },
+  // ========================================
+  //                   YAML
+  // ========================================
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
 
-    // langs > yaml
-    "[yaml]": {
-        "editor.tabSize": 2,
-        "editor.autoIndent": "keep",
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.quickSuggestions": {
-            "strings": "on"
-        }
-    },
+  // ========================================
+  //                   TOML
+  // ========================================
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
 
-    // langs > markdown
-    "markdown.updateLinksOnFileMove.enabled": "always",
-
-    // emmet
-    "emmet.includeLanguages": {
-        "postcss": "css"
-    },
-
-    // prettier
-    "prettier.useTabs": false,
-    "prettier.tabWidth": 4,
-    "prettier.arrowParens": "always",
-    "prettier.bracketSpacing": true,
-    "prettier.singleQuote": true,
-    "prettier.jsxSingleQuote": false,
-    "prettier.trailingComma": "es5",
-    "prettier.semi": true,
-    "prettier.printWidth": 160,
-
-    // better comments
-    "better-comments.tags": [
-        {
-            "tag": "hint:",
-            "color": "#89b4fa",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-        },
-        {
-            "tag": "todo:",
-            "color": "#f9e2af",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-        },
-        {
-            "tag": "fix:",
-            "color": "#f38ba8",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-        }
-    ],
-
-    // error lens
-    "errorLens.delay": 1000,
-    "errorLens.enabledDiagnosticLevels": ["error", "warning"],
-
-    // color highlight
-    "color-highlight.markerType": "dot-before",
-    "color-highlight.markRuler": false,
-
-    // dotenv
-    "dotenv.cloakColor": "#00000040",
-    "dotenv.enableAutocloaking": false,
-    "editor.tokenColorCustomizations": {
-        "[*Light*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#000"
-                    }
-                }
-            ]
-        },
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#fff"
-                    }
-                }
-            ]
-        },
-        "textMateRules": []
-    },
-
-    // intellicode
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-    // code spell checker
-    "cSpell.language": "en",
-    "cSpell.userWords": ["catppuccin"],
-
-    // github copilot
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-
-    // other
-    "update.showReleaseNotes": true,
-    "extensions.ignoreRecommendations": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.location": "hidden"
+  // ========================================
+  //             Even Better TOML
+  // ========================================
+  "evenBetterToml.formatter.indentString": "  ",
+  "evenBetterToml.formatter.reorderArrays": false
 }
