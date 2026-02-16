@@ -1,0 +1,5 @@
+[include]
+    path = ~/.config/git/profiles/default.cfg
+
+[includeIf "gitdir:~/dev/project/"]
+    path = ~/.config/git/profiles/project.cfg
