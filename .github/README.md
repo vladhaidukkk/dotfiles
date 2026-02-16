@@ -8,9 +8,8 @@ Unlike typical dotfile setups that use symbolic links, this repository mirrors t
 
 This repository contains dotfiles for the following applications (but not only):
 
-- **Shell:** [Fish](https://fishshell.com/), [Starship](https://starship.rs/)
-- **Code Editors:** [VSCode](https://code.visualstudio.com/), [Vim](https://www.vim.org/)
-- **VCS Tools:** [Git](https://git-scm.com/), [Delta](https://dandavison.github.io/delta/)
-- **Other Tools:** [Bat](https://github.com/sharkdp/bat/), [Direnv](https://direnv.net/)
+- **Shell:** [Fish](https://fishshell.com/)
+- **Code Editors:** [VSCode](https://code.visualstudio.com/)
+- **VCS Tools:** [Git](https://git-scm.com/)
 
-Each configuration is tailored to my workflow but is flexible enough for customization.
+Each configuration is tailored to my workflows but can be easily customized.
