@@ -7,6 +7,6 @@ if status is-interactive
     # Git for dotfiles management
     alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
-    # rm -> trash
+    # rm -> trash (move files/folders to trash)
     alias rm="trash"
 end

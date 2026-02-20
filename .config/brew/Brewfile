@@ -1,0 +1,18 @@
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Python version management
+brew "pyenv"
+# CLI tool that moves files or folder to the trash
+brew "trash", link: true
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Check your $HOME for unwanted files and directories
+brew "xdg-ninja"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Change the behavior of the fn keys depending on the active application
+cask "fluor"
+# File archiver
+cask "keka"
