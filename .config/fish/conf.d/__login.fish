@@ -17,6 +17,9 @@ if status is-login
     set -x PATH $PYENV_ROOT/bin $PATH
     pyenv init - fish | source
 
+    # Set up fnm (fast node manager)
+    fnm env --use-on-cd --shell fish | source
+
     # Set up zoxide (replaces cd)
     zoxide init --cmd cd fish | source
 end
